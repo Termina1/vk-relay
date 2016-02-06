@@ -1,0 +1,16 @@
+{
+  "name": "vk-relay",
+  "version": "1.0.0",
+  "description": "Easy way to accumulate VK public updates in one group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Termina1",
+  "license": "MIT",
+  "dependencies": {
+    "redis": "^2.4.2",
+    "through2": "^2.0.0",
+    "vk-sdk": "^0.1.2"
+  }
+}

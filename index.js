@@ -10,7 +10,7 @@ function iterate() {
     try {
       crawler(config, vk);
     } catch(e) {}
-  }, 15000);
+  }, 15 * 60 * 1000);
 }
 crawler(config, vk);
 iterate();

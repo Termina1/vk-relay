@@ -11,6 +11,6 @@
   "dependencies": {
     "redis": "^2.4.2",
     "through2": "^2.0.0",
-    "vk-sdk": "^0.1.2"
+    "vk-sdk": "git://github.com/Termina1/node-vk-sdk.git"
   }
 }

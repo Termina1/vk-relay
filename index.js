@@ -9,7 +9,9 @@ function iterate() {
   setInterval(function() {
     try {
       crawler(config, vk);
-    } catch(e) {}
+    } catch(e) {
+      console.log(e);
+    }
   }, 15 * 60 * 1000);
 }
 crawler(config, vk);

@@ -1,5 +1,5 @@
 var vk = require('vk-sdk');
-var config = require('./config');
+var config = require('./config_b');
 
 vk.setToken(config.token);
 

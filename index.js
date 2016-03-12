@@ -1,18 +1,20 @@
-var vk = require('vk-sdk');
+var vk = require('vk-call').vk;
 var config = require('./config_b');
 
-vk.setToken(config.token);
+var api = new vk({
+  token: config.token
+});
 
 var crawler = require('./lib/crawler');
 
 function iterate() {
   setInterval(function() {
     try {
-      crawler(config, vk);
+      crawler(config, api);
     } catch(e) {
       console.log(e);
     }
   }, 15 * 60 * 1000);
 }
-crawler(config, vk);
+crawler(config, api);
 iterate();
